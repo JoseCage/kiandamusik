@@ -12,8 +12,7 @@ public class Track {
     private Artista artist;
     private int trackCover;
 
-    public Track(int id) {
-        this.id = id;
+    public Track() {
     }
 
     public Track(int id, String aPath, String aName, Album album, Artista artist, int trackCover) {

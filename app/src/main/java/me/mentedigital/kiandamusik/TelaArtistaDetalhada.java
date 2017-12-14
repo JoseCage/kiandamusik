@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.util.ArrayList;
+
+import adapters.ArtistTrackAdapter;
 import models.Album;
 import models.ArtistTrackList;
 import models.Artista;
@@ -19,19 +22,21 @@ public class TelaArtistaDetalhada extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         listaDeMusicas = findViewById(R.id.listaDeMusicas);
         setTitle("Força Suprema");
-        Artista fs = new Artista( id: 1, name: "Força Suprema", description: "description", musicStyle: "Hip Hop", R.drawable.header, verified: true);
+        Artista fs = new Artista(1,"Força Suprema","description", "Hip Hop", R.drawable.header, true);
         Track urna = new Track();
-        Album Caveira = new Album( id: 1, name: "Caveira", fs.getId(), releaseDate: "2017", price: "500.00 Kz");
+        Album caveira = new Album(1,"Caveira", fs.getId(),"2017","500.00 Kz");
         urna.setAlbum(caveira);
-        urna.setArtist(js);
+        urna.setArtist(fs);
         urna.setTrackCover(R.drawable.fs);
         urna.setId(1);
-        urna.setName("Urna");
+        urna.setaName("Urna");
 
         ArrayList<Track> tracks = new ArrayList<>();
         tracks.add(urna);
-        ArtistTrackList fsTrackList = new ArtistTrackList( trackListId: 1, fs.getId(), tracks);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context: this);
+        ArtistTrackList fsTrackList = new ArtistTrackList(1, fs.getId(), tracks);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         listaDeMusicas.setLayoutManager(linearLayoutManager);
+        ArtistTrackAdapter adapter = new ArtistTrackAdapter(this, fsTrackList);
+        listaDeMusicas.setAdapter(adapter);
     }
 }
