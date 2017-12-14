@@ -7,5 +7,6 @@
     <color name="colorText">#ffffff</color>
     <color name="colorTextSecondary">#ffffff</color>
     <color name="colorTextLightGray">#ababab</color>
+    <color name="colorBlack">#000</color>
 
 </resources>
