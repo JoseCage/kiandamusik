@@ -26,7 +26,7 @@
         tools:text="@string/appftName" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/appSubName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_bold"
@@ -36,5 +36,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteY="341dp"
         tools:text="@string/appsgName" />
 </android.support.constraint.ConstraintLayout>
