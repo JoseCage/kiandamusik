@@ -5,7 +5,7 @@ package models;
  */
 
 public class Track {
-    private int id;
+    private int trackId;
     private String aPath;
     private String aName;
     private Album album;
@@ -15,8 +15,8 @@ public class Track {
     public Track() {
     }
 
-    public Track(int id, String aPath, String aName, Album album, Artista artist, int trackCover) {
-        this.id = id;
+    public Track(int trackId, String aPath, String aName, Album album, Artista artist, int trackCover) {
+        this.trackId = trackId;
         this.aPath = aPath;
         this.aName = aName;
         this.album = album;
@@ -24,12 +24,12 @@ public class Track {
         this.trackCover = trackCover;
     }
 
-    public int getId() {
-        return id;
+    public int getTrackId() {
+        return trackId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTrackId(int trackId) {
+        this.trackId = trackId;
     }
 
     public String getaPath() {

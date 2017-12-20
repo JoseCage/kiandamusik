@@ -28,7 +28,7 @@ public class TelaArtistaDetalhada extends AppCompatActivity {
         urna.setAlbum(caveira);
         urna.setArtist(fs);
         urna.setTrackCover(R.drawable.fs);
-        urna.setId(1);
+        urna.setTrackId(1);
         urna.setaName("Urna");
 
         ArrayList<Track> tracks = new ArrayList<>();

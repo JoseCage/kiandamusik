@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTextLightGray"
     tools:context="me.mentedigital.kiandamusik.PrincipalActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/popularCover"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,13 +22,13 @@
         app:srcCompat="@drawable/neru" />
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="96dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
         android:alpha="0.8"
         android:background="@color/colorBlack"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/iconPopular"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -38,18 +40,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="44dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/principalArtistName"
             android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/principalTrackTitle"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Neru Americano" />
 
         <TextView
             android:id="@+id/principalTrackTitle"
-            android:layout_width="49dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:layout_marginLeft="44dp"
             android:fontFamily="@font/montserrat"
             android:text="@string/principalTrackTitle"
@@ -71,5 +76,57 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_play_circle_outline_24dp" />
     </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiaEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guiaDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <TextView
+        android:id="@+id/popularTracks"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Músicas Populares"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="@+id/guiaEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/iconPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popularTracks"
+        app:srcCompat="@drawable/ic_whatshot_black_24dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <!--android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popularTracks" /-->
 
 </android.support.constraint.ConstraintLayout>
