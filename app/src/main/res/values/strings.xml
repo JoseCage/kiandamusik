@@ -9,4 +9,6 @@
     <string name="itemArtist">Força Suprema</string>
     <string name="principalArtistName">Neru Americano</string>
     <string name="principalTrackTitle">Selfie</string>
+    <string name="copyrightText">Copyright (C) 2017 - 2018, José Cage</string>
+    <string name="acerca">Acerca</string>
 </resources>
