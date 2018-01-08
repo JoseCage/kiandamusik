@@ -1,22 +1,23 @@
 package models;
 
 /**
- * Created by josecage on 08-12-2017.
+ * Created by Elisa Capololo on 08-12-2017.
  */
 
 public class Track {
-    private int trackId;
+    private int id;
     private String aPath;
-    private String aName;
+    private  String aName;
     private Album album;
     private Artista artist;
-    private int trackCover;
+    private  int trackCover;
 
-    public Track() {
+    public  Track(){
+
     }
 
-    public Track(int trackId, String aPath, String aName, Album album, Artista artist, int trackCover) {
-        this.trackId = trackId;
+    public Track(int id, String aPath, String aName, Album album, Artista artist, int trackCover) {
+        this.id = id;
         this.aPath = aPath;
         this.aName = aName;
         this.album = album;
@@ -24,12 +25,12 @@ public class Track {
         this.trackCover = trackCover;
     }
 
-    public int getTrackId() {
-        return trackId;
+    public int getId() {
+        return id;
     }
 
-    public void setTrackId(int trackId) {
-        this.trackId = trackId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getaPath() {

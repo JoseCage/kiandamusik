@@ -3,34 +3,35 @@ package models;
 import java.util.ArrayList;
 
 /**
- * Created by josecage on 18-12-2017.
+ * Created by Elisa Capololo on 18-12-2017.
  */
 
 public class PopularTrackList {
-    private int popularTrackListId;
-    private int popularArtistId;
+
+    private int ptrackListId;
+    private int artistpopularId;
     private ArrayList<Track> popularTracks;
 
-    public PopularTrackList(int popularTrackListId, int popularArtistId, ArrayList<Track> popularTracks) {
-        this.popularTrackListId = popularTrackListId;
-        this.popularArtistId = popularArtistId;
+    public PopularTrackList(int ptrackListId, int artistpopularId, ArrayList<Track> popularTracks) {
+        this.ptrackListId = ptrackListId;
+        this.artistpopularId = artistpopularId;
         this.popularTracks = popularTracks;
     }
 
-    public int getpopularTrackListId() {
-        return popularTrackListId;
+    public int getPtrackListId() {
+        return ptrackListId;
     }
 
-    public void setpopularTrackListId(int popularTrackListId) {
-        this.popularTrackListId = popularTrackListId;
+    public void setPtrackListId(int ptrackListId) {
+        this.ptrackListId = ptrackListId;
     }
 
-    public int getpopularArtistId() {
-        return popularArtistId;
+    public int getArtistpopularId() {
+        return artistpopularId;
     }
 
-    public void setpopularArtistId(int popularArtistId) {
-        this.popularArtistId = popularArtistId;
+    public void setArtistpopularId(int artistpopularId) {
+        this.artistpopularId = artistpopularId;
     }
 
     public ArrayList<Track> getPopularTracks() {
@@ -41,3 +42,4 @@ public class PopularTrackList {
         this.popularTracks = popularTracks;
     }
 }
+

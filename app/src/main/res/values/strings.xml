@@ -1,14 +1,10 @@
 <resources>
-    <string name="app_name">Kianda Musik</string>
-    <string name="appftName">Kianda</string>
-    <string name="appsgName">Musik</string>
-    <string name="nomeDoArtista">Força Suprema</string>
-    <string name="descricaoDoArtista">Aos 10 anos de idade os seus pais separam-se e NGA muda-se para Portugal com a sua mãe e irmã, vivendo de favor em casa de familiares. É em Portugal que NGA conhece e apaixona-se por Rap e pela cultura Hip Hop, vendo vídeos na televisão de grupos como Black Company.</string>
-    <string name="topMusicas">Top Músicas</string>
-    <string name="itemTitle">Meus pesadelos</string>
-    <string name="itemArtist">Força Suprema</string>
-    <string name="principalArtistName">Neru Americano</string>
-    <string name="principalTrackTitle">Selfie</string>
-    <string name="copyrightText">Copyright (C) 2017 - 2018, José Cage</string>
+    <string name="app_name">Kianda Muzik</string>
+    <string name="nomeArtista">Força Suprema</string>
+    <string name="topMusica">Top Musicas</string>
+    <string name="descrisaoArtista">Na Linha de Sintra, NGA conhece Masta (Terêncio), Don G.
+        (Walter), e Prodígio (Osvaldo), juntos formam o grupo de rap Força Suprema, fazendo
+        também parte da família o seu amigo de infância PMP (Odair), Inspirado em álbuns como
+        Filhos da Ruas dos Black Company e Manda-Chuva do Boss AC, NGA e os amigos .a</string>
     <string name="acerca">Acerca</string>
 </resources>

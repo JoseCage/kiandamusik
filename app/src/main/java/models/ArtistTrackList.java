@@ -3,7 +3,7 @@ package models;
 import java.util.ArrayList;
 
 /**
- * Created by josecage on 08-12-2017.
+ * Created by Elisa Capololo on 08-12-2017.
  */
 
 public class ArtistTrackList {
@@ -37,7 +37,7 @@ public class ArtistTrackList {
         return artistTracks;
     }
 
-    public void setArtistTracks(ArrayList<Track> artistTracks) {
+    public void setArtistTrack(ArrayList<Track> artistTracks) {
         this.artistTracks = artistTracks;
     }
 }

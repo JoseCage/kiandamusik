@@ -1,7 +1,7 @@
 package models;
 
 /**
- * Created by josecage on 08-12-2017.
+ * Created by Elisa Capololo on 08-12-2017.
  */
 
 public class Artista {
@@ -9,15 +9,15 @@ public class Artista {
     private String name;
     private String description;
     private String musicStyle;
-    private int artistCoverStyle;
+    private int artistCoverImage;
     private boolean verified;
 
-    public Artista(int id, String name, String description, String musicStyle, int artistCoverStyle, boolean verified) {
+    public Artista(int id, String name, String description, String musicStyle, int artistCoverImage, boolean verified) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.musicStyle = musicStyle;
-        this.artistCoverStyle = artistCoverStyle;
+        this.artistCoverImage = artistCoverImage;
         this.verified = verified;
     }
 
@@ -53,12 +53,12 @@ public class Artista {
         this.musicStyle = musicStyle;
     }
 
-    public int getArtistCoverStyle() {
-        return artistCoverStyle;
+    public int getArtistCoverImage() {
+        return artistCoverImage;
     }
 
-    public void setArtistCoverStyle(int artistCoverStyle) {
-        this.artistCoverStyle = artistCoverStyle;
+    public void setArtistCoverImage(int artistCoverImage) {
+        this.artistCoverImage = artistCoverImage;
     }
 
     public boolean isVerified() {

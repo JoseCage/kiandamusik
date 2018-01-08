@@ -1,12 +1,12 @@
 package models;
 
 /**
- * Created by josecage on 08-12-2017.
+ * Created by Elisa Capololo on 08-12-2017.
  */
 
 public class Album {
     private int id;
-    private String name;
+    private  String name;
     private int artistId;
     private String releaseDate;
     private String price;

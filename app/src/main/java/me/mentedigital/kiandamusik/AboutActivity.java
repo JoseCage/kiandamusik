@@ -1,7 +1,7 @@
 package me.mentedigital.kiandamusik;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 public class AboutActivity extends AppCompatActivity {
@@ -22,9 +22,10 @@ public class AboutActivity extends AppCompatActivity {
         finish();
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home){
+        if (item.getItemId() == android.R.id.home) {
             onBackPressed();
         }
         return super.onOptionsItemSelected(item);

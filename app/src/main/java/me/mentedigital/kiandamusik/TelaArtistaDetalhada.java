@@ -1,7 +1,9 @@
 package me.mentedigital.kiandamusik;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -16,19 +18,21 @@ import models.Track;
 public class TelaArtistaDetalhada extends AppCompatActivity {
 
     RecyclerView listaDeMusicas;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listaDeMusicas = findViewById(R.id.listaDeMusicas);
         setTitle("Força Suprema");
-        Artista fs = new Artista(1,"Força Suprema","description", "Hip Hop", R.drawable.header, true);
+        Artista fs = new Artista(1, "Força Suprema", "descripton",
+                "HipHop", R.drawable.header, true);
         Track urna = new Track();
-        Album caveira = new Album(1,"Caveira", fs.getId(),"2017","500.00 Kz");
+        Album caveira = new Album(1, "Caveira", fs.getId(), "2017", "500,00kz");
         urna.setAlbum(caveira);
         urna.setArtist(fs);
         urna.setTrackCover(R.drawable.fs);
-        urna.setTrackId(1);
+        urna.setId(1);
         urna.setaName("Urna");
 
         ArrayList<Track> tracks = new ArrayList<>();

@@ -9,23 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelaArtistaDetalhada" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
-        <activity android:name=".PrincipalActivity">
-        </activity>
-        <activity android:name=".AboutActivity">
-        </activity>
-        <activity android:theme="@style/Theme.Design.NoActionBar" android:name=".SplashScreenActivity">
+        <activity android:name="me.mentedigital.kiandamusik.TelaArtistaDetalhada" />
+        <activity android:name="me.mentedigital.kiandamusik.PrincipalActivity"></activity>
+        <activity
+            android:name="me.mentedigital.kiandamusik.SplashScreenActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name="me.mentedigital.kiandamusik.AboutActivity"></activity>
     </application>
 
 </manifest>
